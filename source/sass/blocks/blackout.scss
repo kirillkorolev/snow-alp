@@ -1,0 +1,15 @@
+.blackout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $blackout;
+  opacity: 0.96;
+  z-index: 400;
+  display: block;
+
+  &--none {
+    display: none;
+  }
+}

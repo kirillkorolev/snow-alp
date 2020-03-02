@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-regular.woff" as="font">
+  <link rel="preload" href="fonts/montserrat-semi-bold.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-semi-bold.woff" as="font">
+  <link rel="preload" href="fonts/impact-regular.woff2" as="font">
+  <link rel="preload" href="fonts/impact-regular.woff" as="font">
+  <link rel="shortcut icon" type="image/ico" sizes="16x16" href="favicon.ico">
+  <title>Snow Alp - очистка снега с крыш</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="./js/plugins/picturefill.min.js" async></script>
+</head>
+<body>
+  <div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+  <header class="page-header page-header--menu-closed">
+    <div class="page-header__container">
+      <div class="page-header__info">
+        <div class="page-header__time-slogan">
+          Снег и лед могут появится неожидано, <b>поэтому мы работаем 24/7</b>
+        </div>
+        <div class="page-header__ideas-slogan">
+          <div>Мы открыты для предложений и идей — </div><a class="page-header__mail" href="mailto:hello@snow-alp.ru">hello@snow-alp.ru</a>
+        </div>
+        <div class="page-header__callback">
+          <div>Мы легко можем перезвонить сами — </div><button class="page-header__info-call js-call-back-button" type="button" href="tel:+74953355353">обратный звонок</button>
+        </div>
+      </div>
+      <div class="page-header__menu">
+        <div class="page-header__menu-wrap">
+          <button class="page-header__menu-button js-open-menu-button" type="button" aria-label="открыть меню"><span></span></button>
+          <div class="page-header__logo-wrap">
+            <a class="page-header__logo-link">
+              <span class="page-header__snpw-part">Snow</span>
+              <span class="page-header__alp-part">Alp</span>
+            </a>
+            <div class="page-header__logo-slogan">Чистка снега и наледи с кровли</div>
+          </div>
+          <nav class="page-header__nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Цены</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Преимущества</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Отзывы</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <a class="page-header__call-link" href="tel:+74953355353"><span class="page-header__white-numbers">+7 495</span><span class="page-header__blue-numbers">335 53 53</span></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Snow alp - фирма по очистки крыш от снега</h1>
+    <section class="request">
+      <h2 class="visually-hidden">Оформление заявки</h2>
+      <div class="request__promo">Очистка снега с крыш</div>
+      <div class="request__price-slogan">промышленными альпинистами от 25 руб/м</div>
+      <div class="request__form-slogan">Оставьте заявку — в течение часа к вам выедет специалист</div>
+      <form class="request__form form" method="post">
+        <div class="form__inputs-wrap">
+          <fieldset class="form__item form__item--name">
+            <input class="form__input" id="name" type="text" placeholder="Имя Фамилия" minlength="3" required>
+            <label class="visually-hidden form__label" for="name">Имя</label>
+          </fieldset>
+          <fieldset class="form__item form__item--phone">
+            <input class="form__input" id="phone" type="tel" placeholder="+7 ( ___ ) ___ - __ - __" required>
+            <label class="visually-hidden form__label" for="phone">Номер телефона</label>
+          </fieldset>
+        </div>
+        <div class="form__confirmation">
+          <div class="form__wrapper">
+            <input class="visually-hidden form__checkbox-input" type="checkbox" id="confirmation">
+            <label class="form__checkbox-label" for="confirmation"><span class="visually-hidden">Согласен</span></label>
+          </div>
+          <div class="form__confirmation-text"><div>Я согласен с </div><a class="form__rules-link" href="#">политикой конфиденциальности</a><div>и даю согласие на обработку персональных данных</div></div>
+        </div>
+        <div class="form__button-wrap">
+          <button class="form__button js-form-submit-button" type="submit">Отправить заявку</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer></footer>
+  <div class="success-modal">
+    <button class="success-modal__close-button js-close-success-modal" type="button" aria-label="закрыть окно"><span></span></button>
+    <h2 class="success-modal__title">Заявка успешно отправлена!</h2>
+    <div class="success-modal__text">Спасибо за оставленную заявку, менеджер свяжется с вами в течение 15 минут</div>
+    <svg class="success-modal__check-icon" width="65" height="47">
+      <use xlink:href="#icon-check-white"></use>
+    </svg>
+  </div>
+  <div class="call-back-modal">
+    <button class="call-back-modal__close-button js-close-call-back-modal" type="button" aria-label="закрыть окно"><span></span></button>
+    <h2 class="call-back-modal__title">Заявка на обратный звонок</h2>
+    <div class="call-back-modal__slogan">Оставьте заявку и мы перезвоним вам в течение 15 минут</div>
+    <form class="call-back-modal__form" method="post">
+      <div class="call-back-modal__inputs-wrap">
+        <fieldset class="call-back-modal__item call-back-modal__item--name">
+          <input class="call-back-modal__input" id="name" type="text" placeholder="Имя Фамилия" minlength="3" required>
+          <label class="visually-hidden call-back-modal__label" for="name">Имя</label>
+        </fieldset>
+        <fieldset class="call-back-modal__item call-back-modal__item--phone">
+          <input class="call-back-modal__input" id="call-back-phone" type="tel" placeholder="+7 ( ___ ) ___ - __ - __" required>
+          <label class="visually-hidden call-back-modal__label" for="call-back-phone">Номер телефона</label>
+        </fieldset>
+      </div>
+      <div class="call-back-modal__confirmation">
+        <div class="call-back-modal__wrapper">
+          <input class="visually-hidden call-back-modal__checkbox-input" type="checkbox" id="confirmation-call-back-modal">
+          <label class="call-back-modal__checkbox-label" for="confirmation-call-back-modal"><span class="visually-hidden">Согласен</span></label>
+        </div>
+        <div class="call-back-modal__confirmation-text"><span>Я согласен с </span><a class="call-back-modal__rules-link" href="#">политикой конфиденциальности</a><span>и даю согласие на обработку</span>персональных данных<span></span></div>
+      </div>
+      <div class="call-back-modal__button-wrap">
+        <button class="call-back-modal__button js-call-back-modal-submit-button" type="submit">Перезвоните мне</button>
+      </div>
+    </form>
+  </div>
+  <div class="blackout blackout--none"></div>
+  <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+  <script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+  <script src="./js/mask.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

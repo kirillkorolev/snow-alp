@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/montserrat-regular.woff") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/montserrat-semi-bold.woff2") format("woff2"), url("../fonts/montserrat-semi-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Impact";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/impact-regular.woff") format("woff2"), url("../fonts/impact-regular.woff") format("woff");
+}
