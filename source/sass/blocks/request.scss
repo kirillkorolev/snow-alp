@@ -62,19 +62,19 @@
     background-image: url("../img/backgrounds/bg-request-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/backgrounds/backgrounds/bg-request-tablet@2x.png");
+      background-image: url("../img/backgrounds/bg-request-tablet@2x.png");
     }
   }
 }
 
 @media (max-width: $mobile-width) {
   .request {
-    padding: 159px 15px 87px;
+    padding: 157px 15px 87px;
 
     background-image: url("../img/backgrounds/bg-request-mobile@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/backgrounds/backgrounds/bg-request-mobile@2x.png");
+      background-image: url("../img/backgrounds/bg-request-mobile@2x.png");
     }
   }
 

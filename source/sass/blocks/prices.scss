@@ -1,0 +1,265 @@
+.prices__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 600;
+  margin: 0 auto 60px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 410px;
+}
+
+.prices__title::before,
+.prices__title::after {
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 1px;
+  background-color: $black;
+  top: 20px;
+}
+
+.prices__title::before {
+  left: -22%;
+}
+
+.prices__title::after {
+  right: -22%;
+}
+
+.prices__title-black-letters {
+  color: $black;
+  margin-right: 5px;
+}
+
+.prices__title-blue-letters {
+  color: $blue;
+}
+
+.prices__activity {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 600;
+  color: $black;
+  padding: 0 4%;
+}
+
+.prices__item span {
+  font-size: 24px;
+  line-height: 27px;
+  color: $charcoal;
+}
+
+.prices__item .prices__sum {
+  font-size: 84px;
+  line-height: 84px;
+  color: $blue;
+  font-weight: 700;
+}
+
+.prices__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto 44px;
+  justify-content: center;
+}
+
+.prices__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  height: 347px;
+  width: 300px;
+  margin: 0 15px 20px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px 0 49px;
+  border-radius: 15px;
+}
+
+.prices__item-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices {
+  padding: 80px 0 75px;
+}
+
+.prices__note {
+  font-size: 18px;
+  color: $black;
+  text-align: center;
+  width: 510px;
+  margin: 0 auto 34px;
+}
+
+.prices__link {
+  width: 410px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  color: $white;
+  background-color: $blue;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 19px;
+  margin-bottom: 47px;
+}
+
+.prices__link:hover,
+.prices__link:focus {
+  background-color: $yellow;
+  color: $black;
+}
+
+.prices__link:active {
+  opacity: 0.7;
+}
+
+.prices__wrap {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 840px;
+  width: 100%;
+}
+
+.prices__notification {
+  font-size: 14px;
+  line-height: 18px;
+  color: $pale-grey;
+}
+
+@media (max-width: $tablet-width) {
+  .prices__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .prices {
+    padding: 52px 0 64px;
+  }
+
+  .prices__title::before {
+    left: 0;
+    top: 19px;
+    width: 61px;
+  }
+
+  .prices__title::after {
+    right: 0;
+    top: 19px;
+    width: 61px;
+  }
+
+  .prices__activity {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .prices__sum {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .prices__item {
+    width: 330px;
+    height: 307px;
+    padding: 40px 36px 49px;
+    margin-bottom: 31px;
+  }
+
+  .prices__list {
+    margin-bottom: 12px;
+  }
+
+  .prices__note {
+    font-size: 16px;
+    padding: 0 25px;
+  }
+
+  .prices__link {
+    width: 330px;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .prices__wrap {
+    max-width: 630px;
+  }
+
+  .prices__notification {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .prices__title {
+    font-size: 21px;
+    line-height: 21px;
+    width: 100%;
+  }
+
+  .prices__title::before,
+  .prices__title::after {
+    display: none;
+  }
+
+  .prices {
+    padding: 55px 4.69% 49px;
+  }
+
+  .prices__list {
+    flex-direction: column;
+    margin-bottom: 44px;
+  }
+
+  .prices__item {
+    width: 100%;
+    margin: 0;
+    height: 310px;
+    padding: 43px 0 41px;
+  }
+
+  .prices__item:not(:last-child) {
+    margin-bottom: 23px;
+  }
+
+  .prices__item span {
+    font-size: 21px;
+    line-height: 34px;
+  }
+
+  .prices__item .prices__sum {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .prices__wrap {
+    max-width: none;
+  }
+
+  .prices__note {
+    width: 100%;
+    padding: 0;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 26px;
+  }
+
+  .prices__link {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+
+  .prices__activity {
+    padding: 0 9%;
+  }
+}
