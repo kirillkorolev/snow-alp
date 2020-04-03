@@ -52,6 +52,22 @@
   border: 0;
 }
 
+.contacts__map-button {
+  @include reset-button;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $red;
+}
+
+.contacts__map-button:hover .contacts____map-icon,
+.contacts__map-button:focus .contacts____map-icon {
+  width: 120px;
+  height: 120px;
+}
+
 @media (max-width: $tablet-width) {
   .contacts__label {
     font-size: 21px;
